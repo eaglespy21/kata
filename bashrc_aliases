@@ -1,0 +1,41 @@
+alias l="ls -ltra"
+
+alias python="python"
+
+alias projects="cd /LocalStorage/Projects"
+
+alias x="pwd"
+
+alias c="clear"
+
+alias gp="git push"
+
+alias gs="git status"
+
+alias gb="git branch"
+
+alias gl="git log"
+
+alias gc="git clean -fd"
+
+alias ebc="vim ~/.bashrc"
+
+alias aa="conda activate devEnv4.1.1"
+
+alias al="conda activate latestPackages"
+
+alias ap="conda activate pydl"
+
+alias debpy="python -m debugpy --listen 5678 --wait-for-client"
+
+alias w="watch -n0.1 nvidia-smi"
+
+alias sm="saved_model_cli show --all --dir"
+
+bind '"\e[A": history-search-backward'
+
+export PS1='\u@\W> '
+
+HISTSIZE=10000
+
+HISTFILESIZE=10000
