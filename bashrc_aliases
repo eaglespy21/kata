@@ -39,3 +39,6 @@ export PS1='\u@\W> '
 HISTSIZE=10000
 
 HISTFILESIZE=10000
+
+alias arch="uname -m"
+alias cpu="cat /proc/cpuinfo"
