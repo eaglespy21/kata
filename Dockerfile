@@ -8,3 +8,4 @@ RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 RUN /usr/bin/python3 -m pip install -U flake8
 RUN apk add openjdk17 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN git config --global user.email "saurabhhindlekar@hotmail.com" && git config --global user.name "Saurabh Hindlekar"
