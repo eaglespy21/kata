@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./python/9_16_2022"
+    ]
+}
