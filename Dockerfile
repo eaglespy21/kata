@@ -1,6 +1,6 @@
 FROM alpine:3.14
 RUN apk update
-RUN apk add python3 git bash bash-doc bash-completion openssh-client
+RUN apk add python3 git bash bash-doc bash-completion openssh-client maven
 RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 COPY bashrc_aliases /tmp/bashrc_aliases
 RUN touch /root/.bashrc && cat /tmp/bashrc_aliases >> /root/.bashrc
