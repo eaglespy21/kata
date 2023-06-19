@@ -21,8 +21,8 @@ def bin_search(arr, key, is_sorted=False):
         arr.sort()
     left = 0
     right = len(arr)
-    while left < right:
-        mid = (right + left) // 2
+    while left <= right:  # Less than and equal to is crucial to solve for corner case when key is at index 1 
+        mid = (right + left) // 2 # Addition is crucial to solve for cases when left is greater than 0 
         print(left, right, mid, arr[mid])
         if arr[mid] == key:
             return mid 
