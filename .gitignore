@@ -1,2 +1,6 @@
+#SSH credentials
 sshkeys
+#python
 /**/*.pyc
+#Typescript
+node_modules
