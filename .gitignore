@@ -2,5 +2,6 @@
 sshkeys
 #python
 /**/*.pyc
+**/*.venv
 #Typescript
 node_modules
