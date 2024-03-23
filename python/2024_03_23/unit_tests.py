@@ -1,6 +1,6 @@
 import unittest
 import random
-from binary_search import bs
+from binary_search import bs, bs_r
 
 
 class TestAll(unittest.TestCase):
@@ -17,8 +17,8 @@ class TestAll(unittest.TestCase):
 
     def testBinarySearchR(self):
         for i, num in enumerate(self.arr):
-            self.assertEqual(i, bs(self.arr, num))
-        self.assertEqual(-1, bs(self.arr, -99))
+            self.assertEqual(i, bs_r(self.arr, 0, len(self.arr), num))
+        self.assertEqual(-1, bs_r(self.arr, 0, len(self.arr), -99))
 
 
 if __name__ == '__main__':
