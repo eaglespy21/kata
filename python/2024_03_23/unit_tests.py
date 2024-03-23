@@ -13,10 +13,12 @@ class TestAll(unittest.TestCase):
     def testBinarySearch(self):
         for i, num in enumerate(self.arr):
             self.assertEqual(i, bs(self.arr, num))
+        self.assertEqual(-1, bs(self.arr, -99))
 
     def testBinarySearchR(self):
         for i, num in enumerate(self.arr):
             self.assertEqual(i, bs(self.arr, num))
+        self.assertEqual(-1, bs(self.arr, -99))
 
 
 if __name__ == '__main__':
